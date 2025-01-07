@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+/* Reset global */
+:root {
+    font-family: 'Hack';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Ajusta el diseño para el contenedor raíz */
+  app-header, app-footer {
+    display: block; /* Asegura que se comporten como bloques */
+    width: 100%;
+  }
+  
+  router-outlet {
+    display: block;
+    width: 100%;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height)); /* Ajusta el contenido dinámico */
+  }
+  
+  @font-face {
+    font-family: 'Hack';
+    src: url('assets/fonts/hack.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  

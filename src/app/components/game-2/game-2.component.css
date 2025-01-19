@@ -1,0 +1,150 @@
+/* General styling for the game */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2; /* Soft light gray background */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  h1 {
+    font-size: 3rem; /* Larger title */
+    color: #444; /* Soft dark gray */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .game-container {
+    width: 100%;
+    max-width: 600px; /* Smaller container */
+    background-color: #fff; /* White background for the main container */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: auto;
+  }
+  
+  .question-box {
+    background-color: #e0e0e0; /* Soft gray */
+    border: 2px solid #b0b0b0; /* Subtle border */
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .question {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  button {
+    background-color: #f0f0f0; /* Lighter gray for buttons */
+    border: 1px solid #cccccc; /* Light border */
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
+    width: 80%; /* Buttons won't stretch across the full screen */
+    max-width: 350px; /* Restrict maximum width */
+  }
+  
+  button:hover {
+    background-color: #dcdcdc; /* Slightly darker gray on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  button.correct {
+    background-color: #a0d6a0; /* Soft green for correct answers */
+  }
+  
+  button.incorrect {
+    background-color: #d6a0a0; /* Soft red for incorrect answers */
+  }
+  
+  .feedback {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .correct-feedback, .incorrect-feedback {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    max-width: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* White text */
+  }
+  
+  .correct-feedback {
+    background-color: #4caf50; /* Green background for correct */
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .incorrect-feedback {
+    background-color: #f44336; /* Red background for incorrect */
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  
+  .score {
+    font-size: 1.8rem;
+    color: #444; /* Dark gray */
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  
+  .next-button {
+    background-color: #cccccc;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .next-button:hover {
+    background-color: #b0b0b0;
+    transform: scale(1.05);
+  }
+  

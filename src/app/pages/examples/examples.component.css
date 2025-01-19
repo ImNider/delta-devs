@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .exercise {
+    margin-bottom: 20px;  /* Se reduce el margen entre ejercicios */
+    padding: 15px;  /* Se reduce el padding para que el cuadro sea más pequeño */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    font-size: 0.9em;  /* Reduce el tamaño de la fuente */
+  }
+  
+  h2 {
+    color: #28292b;
+    font-size: 1.3em;  /* Tamaño de título ajustado */
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  
+  ol {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  
+  .math {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .mathjax {
+    display: block;
+    margin-top: 10px;
+  }
+  

@@ -31,7 +31,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/mathjax-full/es5/tex-mml-chtml.js"
+            ]
           },
           "configurations": {
             "production": {

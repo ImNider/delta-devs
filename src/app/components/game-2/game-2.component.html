@@ -1,0 +1,23 @@
+<div class="game-container">
+    <h1>¡Juego de Derivadas!</h1>
+    <div class="question-box">
+      <p class="question" [innerHTML]="currentQuestion"></p>
+      <div class="options">
+        <button *ngFor="let option of options" (click)="checkAnswer(option)" [ngClass]="{'correct': option.correct, 'incorrect': !option.correct}">
+          {{ option.value }}
+        </button>
+      </div>
+    </div>
+    <div class="feedback" *ngIf="feedbackMessage">
+      <p [ngClass]="{'correct-feedback': isCorrect, 'incorrect-feedback': !isCorrect}">
+        {{ feedbackMessage }}
+      </p>
+    </div>
+    <div class="score">
+      <p>Puntuación: {{ score }}</p>
+    </div>
+    <div *ngIf="showNextButton">
+      <button class="next-button" (click)="nextQuestion()">Siguiente Pregunta</button>
+    </div>
+  </div>
+  
